@@ -1,0 +1,63 @@
+export default function Portfolio() {
+  return (
+    <div className="min-h-screen bg-gradient-to-r from-pink-200 via-purple-200 to-indigo-200 text-gray-900">
+      {/* Navbar */}
+      <nav className="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+        <ul className="flex justify-center space-x-8 py-4 font-semibold text-lg">
+          <li><a href="#about" className="hover:text-pink-600">About</a></li>
+          <li><a href="#skills" className="hover:text-purple-600">Skills</a></li>
+          <li><a href="#education" className="hover:text-indigo-600">Education</a></li>
+          <li><a href="#contact" className="hover:text-pink-600">Contact</a></li>
+        </ul>
+      </nav>
+
+      {/* Hero Section */}
+      <section className="flex flex-col items-center justify-center h-screen text-center" id="about">
+        <h1 className="text-5xl font-bold mb-4">Hi, I'm <span className="text-indigo-600">Akhila</span></h1>
+        <p className="text-xl max-w-xl">
+          Motivated BCA student passionate about Software Development & IT.
+          Skilled in <span className="font-semibold">Python, C, HTML, CSS, MySQL, Excel</span>.
+        </p>
+      </section>
+
+      {/* Skills Section */}
+      <section id="skills" className="py-16 bg-white text-center">
+        <h2 className="text-3xl font-bold mb-8">Skills</h2>
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-6 px-6">
+          {["Python", "C Language", "HTML & CSS", "MySQL", "Excel"].map(skill => (
+            <div key={skill} className="bg-gradient-to-r from-indigo-300 to-pink-300 rounded-2xl p-6 shadow-md hover:scale-105 transition">
+              <p className="font-semibold text-lg">{skill}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Education Section */}
+      <section id="education" className="py-16 bg-gradient-to-r from-purple-100 to-pink-100 text-center">
+        <h2 className="text-3xl font-bold mb-8">Education</h2>
+        <div className="max-w-2xl mx-auto space-y-6">
+          <div className="bg-white shadow-md rounded-2xl p-6">
+            <h3 className="text-xl font-semibold">B.C.A - Aditya Engineering College</h3>
+            <p className="text-gray-700">2023 - 2026 | CGPA: 8.70</p>
+          </div>
+          <div className="bg-white shadow-md rounded-2xl p-6">
+            <h3 className="text-xl font-semibold">Kendriya Vidyalaya, Visakhapatnam</h3>
+            <p className="text-gray-700">12th | CGPA: 6.40</p>
+          </div>
+          <div className="bg-white shadow-md rounded-2xl p-6">
+            <h3 className="text-xl font-semibold">Kendriya Vidyalaya, Visakhapatnam</h3>
+            <p className="text-gray-700">10th | CGPA: 7.70</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section id="contact" className="py-16 bg-white text-center">
+        <h2 className="text-3xl font-bold mb-6">Contact</h2>
+        <p className="mb-4">📧 <a href="mailto:amarapinniakhila@gmail.com" className="text-indigo-600">amarapinniakhila@gmail.com</a></p>
+        <p>📞 +91-7569126855</p>
+        <p className="mt-6">📍 Visakhapatnam, Andhra Pradesh, India</p>
+      </section>
+    </div>
+  );
+}
