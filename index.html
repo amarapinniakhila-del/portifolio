@@ -1,7 +1,6 @@
 export default function Portfolio() {
   return (
     <div className="min-h-screen bg-gradient-to-r from-pink-200 via-purple-200 to-indigo-200 text-gray-900">
-      {/* Navbar */}
       <nav className="fixed top-0 left-0 w-full bg-white shadow-md z-50">
         <ul className="flex justify-center space-x-8 py-4 font-semibold text-lg">
           <li><a href="#about" className="hover:text-pink-600">About</a></li>
@@ -10,8 +9,6 @@ export default function Portfolio() {
           <li><a href="#contact" className="hover:text-pink-600">Contact</a></li>
         </ul>
       </nav>
-
-      {/* Hero Section */}
       <section className="flex flex-col items-center justify-center h-screen text-center" id="about">
         <h1 className="text-5xl font-bold mb-4">Hi, I'm <span className="text-indigo-600">Akhila</span></h1>
         <p className="text-xl max-w-xl">
@@ -19,8 +16,6 @@ export default function Portfolio() {
           Skilled in <span className="font-semibold">Python, C, HTML, CSS, MySQL, Excel</span>.
         </p>
       </section>
-
-      {/* Skills Section */}
       <section id="skills" className="py-16 bg-white text-center">
         <h2 className="text-3xl font-bold mb-8">Skills</h2>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-6 px-6">
@@ -31,8 +26,6 @@ export default function Portfolio() {
           ))}
         </div>
       </section>
-
-      {/* Education Section */}
       <section id="education" className="py-16 bg-gradient-to-r from-purple-100 to-pink-100 text-center">
         <h2 className="text-3xl font-bold mb-8">Education</h2>
         <div className="max-w-2xl mx-auto space-y-6">
@@ -50,8 +43,6 @@ export default function Portfolio() {
           </div>
         </div>
       </section>
-
-      {/* Contact Section */}
       <section id="contact" className="py-16 bg-white text-center">
         <h2 className="text-3xl font-bold mb-6">Contact</h2>
         <p className="mb-4">📧 <a href="mailto:amarapinniakhila@gmail.com" className="text-indigo-600">amarapinniakhila@gmail.com</a></p>
